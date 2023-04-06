@@ -20,7 +20,7 @@ function SendQuestion() {
     headers: {
       Accept: "application/json",
       "Content-Type": "application/json",
-      Authorization: "Bearer " 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,
+      Authorization: "Bearer " + "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",
     },
     body: JSON.stringify({
       model: "text-davinci-003",
