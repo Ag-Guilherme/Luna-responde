@@ -1,4 +1,4 @@
-const inputQuestion = document.getElementById("inputQuestion");
+cconst inputQuestion = document.getElementById("inputQuestion");
 const result = document.getElementById("result");
 const sendBtn = document.getElementById("sendBtn");
 
@@ -20,7 +20,7 @@ function SendQuestion() {
     headers: {
       Accept: "application/json",
       "Content-Type": "application/json",
-      Authorization: "Bearer " "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",
+      Authorization: "Bearer " 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,
     },
     body: JSON.stringify({
       model: "text-davinci-003",
@@ -43,4 +43,7 @@ function SendQuestion() {
 
       result.scrollTop = result.scrollHeight;
     })
-    .catch((error) => console
+    .catch((error) => {
+      console.error(error);
+    });
+}
